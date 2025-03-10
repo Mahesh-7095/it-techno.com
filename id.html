@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML ID Attribute</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .id-example {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .id-example h2 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .id-example p {
+        line-height: 1.6;
+      }
+      .id-example pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .id-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      #unique {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML ID Attribute</h1>
+    </header>
+
+    <div class="container">
+      <div class="id-example">
+        <h2>Using the ID Attribute</h2>
+        <p>
+          The <code>id</code> attribute is used to uniquely identify an element.
+          Each <code>id</code> must be unique within a page.
+        </p>
+        <pre><code>
+&lt;p id="unique"&gt;This is a uniquely styled paragraph.&lt;/p&gt;
+            </code></pre>
+        <p id="unique">This is a uniquely styled paragraph.</p>
+      </div>
+
+      <div class="id-example">
+        <h2>ID vs Class</h2>
+        <p>
+          While <code>class</code> can be used on multiple elements,
+          <code>id</code> should be unique to a single element.
+        </p>
+        <pre><code>
+&lt;p id="unique"&gt;This is a unique element.&lt;/p&gt;
+&lt;p class="highlight"&gt;This is a class-based element.&lt;/p&gt;
+            </code></pre>
+        <p id="unique">This is a unique element.</p>
+        <p class="highlight">This is a class-based element.</p>
+      </div>
+    </div>
+  </body>
+</html>

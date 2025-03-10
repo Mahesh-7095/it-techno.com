@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Computer Code</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .code-example {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .code-example h2 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .code-example p {
+        line-height: 1.6;
+      }
+      .code-example pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .code-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      kbd {
+        background-color: #333;
+        color: #fff;
+        padding: 2px 5px;
+        border-radius: 3px;
+        font-family: Consolas, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Computer Code</h1>
+    </header>
+
+    <div class="container">
+      <div class="code-example">
+        <h2>Displaying Code</h2>
+        <p>
+          Use the <code>&lt;code&gt;</code> tag to display inline code snippets.
+        </p>
+        <pre><code>
+&lt;p&gt;Use the &lt;code&gt;&amp;lt;code&amp;gt;&lt;/code&gt; tag to display code.&lt;/p&gt;
+            </code></pre>
+        <p>Use the <code>&lt;code&gt;</code> tag to display code.</p>
+      </div>
+
+      <div class="code-example">
+        <h2>Preformatted Text</h2>
+        <p>
+          Use the <code>&lt;pre&gt;</code> tag to display preformatted text,
+          such as code blocks.
+        </p>
+        <pre><code>
+&lt;pre&gt;
+    &lt;code&gt;
+        function greet() {
+            console.log("Hello, World!");
+        }
+    &lt;/code&gt;
+&lt;/pre&gt;
+            </code></pre>
+        <pre>
+                <code>
+function greet() {
+    console.log("Hello, World!");
+}
+                </code>
+            </pre>
+      </div>
+
+      <div class="code-example">
+        <h2>Keyboard Input</h2>
+        <p>Use the <code>&lt;kbd&gt;</code> tag to represent keyboard input.</p>
+        <pre><code>
+&lt;p&gt;Press &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt; to copy text.&lt;/p&gt;
+            </code></pre>
+        <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text.</p>
+      </div>
+    </div>
+  </body>
+</html>

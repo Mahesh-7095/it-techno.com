@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java Home</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .example {
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      h1,
+      h2 {
+        color: #007bff;
+      }
+      pre {
+        background-color: #f8f9fa;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        overflow-x: auto;
+      }
+      code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Java Home</h1>
+      <p>
+        This page demonstrates basic Java concepts with examples and code
+        snippets.
+      </p>
+
+      <!-- Example 1: Hello World -->
+      <div class="example">
+        <h2>1. Hello World</h2>
+        <p>The classic "Hello, World!" program in Java.</p>
+        <pre><code>
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+            </code></pre>
+      </div>
+
+      <!-- Example 2: Variables and Data Types -->
+      <div class="example">
+        <h2>2. Variables and Data Types</h2>
+        <p>
+          Java supports various data types like <code>int</code>,
+          <code>double</code>, <code>String</code>, and <code>boolean</code>.
+        </p>
+        <pre><code>
+public class Variables {
+    public static void main(String[] args) {
+        int age = 25;
+        double height = 5.6;
+        String name = "Alice";
+        boolean isStudent = true;
+
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Height: " + height);
+        System.out.println("Is Student: " + isStudent);
+    }
+}
+            </code></pre>
+      </div>
+
+      <!-- Example 3: Loops -->
+      <div class="example">
+        <h2>3. Loops</h2>
+        <p>
+          Java supports <code>for</code> and <code>while</code> loops for
+          iteration.
+        </p>
+        <pre><code>
+public class Loops {
+    public static void main(String[] args) {
+        // For Loop
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Iteration: " + i);
+        }
+
+        // While Loop
+        int count = 0;
+        while (count < 3) {
+            System.out.println("Count: " + count);
+            count++;
+        }
+    }
+}
+            </code></pre>
+      </div>
+
+      <!-- Example 4: Functions -->
+      <div class="example">
+        <h2>4. Functions</h2>
+        <p>Functions (methods) in Java are defined inside a class.</p>
+        <pre><code>
+public class Functions {
+    public static void main(String[] args) {
+        String message = greet("Bob");
+        System.out.println(message);
+    }
+
+    public static String greet(String name) {
+        return "Hello, " + name + "!";
+    }
+}
+            </code></pre>
+      </div>
+    </div>
+  </body>
+</html>

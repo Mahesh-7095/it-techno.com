@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NumPy Home</title>
+    <style>
+      /* Same styles as saas-home.html */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: relative;
+      }
+      h1 {
+        color: #007bff;
+        text-align: center;
+      }
+      h2 {
+        color: #0056b3;
+      }
+      p {
+        line-height: 1.6;
+      }
+      pre {
+        background-color: #f8f9fa;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        overflow-x: auto;
+      }
+      code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-top: 20px;
+      }
+      .btn:hover {
+        background-color: #0056b3;
+      }
+      .nav-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+      .nav-buttons .btn {
+        margin: 0;
+      }
+      @media (max-width: 768px) {
+        .container {
+          padding: 10px;
+        }
+        .nav-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+        .nav-buttons .btn {
+          margin: 10px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to NumPy!</h1>
+      <p>
+        NumPy is a Python library for numerical computing. It provides support
+        for arrays, matrices, and mathematical functions.
+      </p>
+
+      <h2>What is NumPy?</h2>
+      <p>
+        NumPy is a fundamental library for scientific computing in Python. It
+        provides efficient data structures for handling large datasets and
+        performing mathematical operations.
+      </p>
+
+      <h2>Why Learn NumPy?</h2>
+      <ul>
+        <li>
+          <strong>Efficiency:</strong> Optimized for numerical computations.
+        </li>
+        <li>
+          <strong>Interoperability:</strong> Works with other libraries like
+          Pandas and SciPy.
+        </li>
+        <li>
+          <strong>Mathematical Functions:</strong> Supports linear algebra,
+          Fourier transforms, etc.
+        </li>
+      </ul>
+
+      <h2>Key Topics in NumPy</h2>
+      <ul>
+        <li>Introduction to NumPy</li>
+        <li>Arrays and Matrices</li>
+        <li>Mathematical Operations</li>
+        <li>Broadcasting</li>
+        <li>Linear Algebra</li>
+      </ul>
+
+      <h2>Example: Create an Array with NumPy</h2>
+      <p>Here’s an example of creating a NumPy array:</p>
+      <pre><code>
+import numpy as np
+arr = np.array([1, 2, 3])
+print(arr)
+        </code></pre>
+
+      <!-- Navigation Buttons -->
+      <div class="nav-buttons">
+        <a href="#" class="btn">Previous</a>
+        <!-- Replace # with the previous page link -->
+        <a href="numpy-intro.html" class="btn">Next</a>
+      </div>
+    </div>
+  </body>
+</html>

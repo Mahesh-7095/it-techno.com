@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Geolocation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .geolocation-example {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .geolocation-example h2 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .geolocation-example p {
+        line-height: 1.6;
+      }
+      .geolocation-example pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .geolocation-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Geolocation</h1>
+    </header>
+
+    <div class="container">
+      <div class="geolocation-example">
+        <h2>Using the Geolocation API</h2>
+        <p>The Geolocation API allows you to retrieve the user's location.</p>
+        <pre><code>
+&lt;button onclick="getLocation()"&gt;Get Location&lt;/button&gt;
+&lt;p id="location"&gt;&lt;/p&gt;
+&lt;script&gt;
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            document.getElementById("location").innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+    function showPosition(position) {
+        document.getElementById("location").innerHTML =
+            "Latitude: " + position.coords.latitude + "&lt;br&gt;" +
+            "Longitude: " + position.coords.longitude;
+    }
+&lt;/script&gt;
+            </code></pre>
+        <button onclick="getLocation()">Get Location</button>
+        <p id="location"></p>
+        <script>
+          function getLocation() {
+            if (navigator.geolocation) {
+              navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+              document.getElementById("location").innerHTML =
+                "Geolocation is not supported by this browser.";
+            }
+          }
+          function showPosition(position) {
+            document.getElementById("location").innerHTML =
+              "Latitude: " +
+              position.coords.latitude +
+              "<br>" +
+              "Longitude: " +
+              position.coords.longitude;
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

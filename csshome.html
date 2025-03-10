@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to CSS</title>
+    <style>
+      /* Global Styles */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #007bff;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+
+      section {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        color: #007bff;
+        margin-top: 0;
+      }
+
+      pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+
+      code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+
+      button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      .example-box {
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 10px 0;
+      }
+
+      .example-box h3 {
+        margin-top: 0;
+        color: #333;
+      }
+
+      .example-box p {
+        margin: 10px 0;
+      }
+
+      .example-box .output {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #f8f8f8;
+        border-radius: 5px;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+      }
+
+      footer p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to CSS</h1>
+      <p>
+        Learn how to style your web pages with Cascading Style Sheets (CSS).
+      </p>
+    </header>
+
+    <div class="container">
+      <!-- Introduction to CSS -->
+      <section>
+        <h2>What is CSS?</h2>
+        <p>
+          CSS (Cascading Style Sheets) is a stylesheet language used to describe
+          the presentation of a document written in HTML or XML. It controls the
+          layout, colors, fonts, and overall visual appearance of a webpage.
+        </p>
+        <pre><code>
+&lt;style&gt;
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+&lt;/style&gt;
+            </code></pre>
+      </section>
+
+      <!-- Basic CSS Example -->
+      <section>
+        <h2>Basic CSS Example</h2>
+        <p>
+          Here’s an example of how CSS can be used to style a simple HTML
+          element:
+        </p>
+        <div class="example-box">
+          <h3>HTML</h3>
+          <pre><code>
+&lt;p class="styled-text"&gt;This is a styled paragraph.&lt;/p&gt;
+                </code></pre>
+
+          <h3>CSS</h3>
+          <pre><code>
+&lt;style&gt;
+    .styled-text {
+        color: #007BFF;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+&lt;/style&gt;
+                </code></pre>
+
+          <h3>Output</h3>
+          <div class="output">
+            <p
+              class="styled-text"
+              style="color: #007bff; font-size: 1.2rem; font-weight: bold"
+            >
+              This is a styled paragraph.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CSS Box Model -->
+      <section>
+        <h2>CSS Box Model</h2>
+        <p>
+          The CSS Box Model describes the design and layout of elements. It
+          consists of:
+        </p>
+        <ul>
+          <li><strong>Content</strong>: The actual content of the element.</li>
+          <li>
+            <strong>Padding</strong>: Space between the content and the border.
+          </li>
+          <li>
+            <strong>Border</strong>: A border around the padding and content.
+          </li>
+          <li><strong>Margin</strong>: Space outside the border.</li>
+        </ul>
+        <div class="example-box">
+          <h3>CSS</h3>
+          <pre><code>
+&lt;style&gt;
+    .box {
+        width: 200px;
+        height: 100px;
+        padding: 20px;
+        border: 5px solid #007BFF;
+        margin: 20px;
+        background-color: #f8f8f8;
+    }
+&lt;/style&gt;
+                </code></pre>
+
+          <h3>Output</h3>
+          <div class="output">
+            <div
+              class="box"
+              style="
+                width: 200px;
+                height: 100px;
+                padding: 20px;
+                border: 5px solid #007bff;
+                margin: 20px;
+                background-color: #f8f8f8;
+              "
+            >
+              This is a box.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CSS Flexbox -->
+      <section>
+        <h2>CSS Flexbox</h2>
+        <p>
+          Flexbox is a layout model that allows you to design flexible and
+          responsive layouts.
+        </p>
+        <div class="example-box">
+          <h3>CSS</h3>
+          <pre><code>
+&lt;style&gt;
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f8f8f8;
+        padding: 10px;
+    }
+    .flex-item {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 20px;
+        margin: 5px;
+        text-align: center;
+    }
+&lt;/style&gt;
+                </code></pre>
+
+          <h3>Output</h3>
+          <div class="output">
+            <div
+              class="flex-container"
+              style="
+                display: flex;
+                justify-content: space-between;
+                background-color: #f8f8f8;
+                padding: 10px;
+              "
+            >
+              <div
+                class="flex-item"
+                style="
+                  background-color: #007bff;
+                  color: #fff;
+                  padding: 20px;
+                  margin: 5px;
+                  text-align: center;
+                "
+              >
+                Item 1
+              </div>
+              <div
+                class="flex-item"
+                style="
+                  background-color: #007bff;
+                  color: #fff;
+                  padding: 20px;
+                  margin: 5px;
+                  text-align: center;
+                "
+              >
+                Item 2
+              </div>
+              <div
+                class="flex-item"
+                style="
+                  background-color: #007bff;
+                  color: #fff;
+                  padding: 20px;
+                  margin: 5px;
+                  text-align: center;
+                "
+              >
+                Item 3
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Button -->
+      <section>
+        <h2>Interactive Button</h2>
+        <p>Here’s an example of a button styled with CSS:</p>
+        <div class="example-box">
+          <h3>CSS</h3>
+          <pre><code>
+&lt;style&gt;
+    .styled-button {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .styled-button:hover {
+        background-color: #0056b3;
+    }
+&lt;/style&gt;
+                </code></pre>
+
+          <h3>Output</h3>
+          <div class="output">
+            <button
+              class="styled-button"
+              style="
+                background-color: #007bff;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+              "
+            >
+              Click Me
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 CSS Learning. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

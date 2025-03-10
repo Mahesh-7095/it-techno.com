@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Basics - Awesome Edition</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* General Styles */
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+
+      h1,
+      h2 {
+        font-family: "Poppins", sans-serif;
+        color: #007bff;
+      }
+
+      code {
+        font-family: "Roboto Mono", monospace;
+        background-color: #e9ecef;
+        padding: 2px 5px;
+        border-radius: 3px;
+      }
+
+      pre {
+        background-color: #2d2d2d;
+        color: #f8f9fa;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+        font-family: "Roboto Mono", monospace;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      a:hover {
+        color: #0056b3;
+      }
+
+      /* Header */
+      header {
+        background-color: #007bff;
+        color: #fff;
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 3rem;
+        margin: 0;
+        color: #fff;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        margin: 10px 0 0;
+      }
+
+      /* Main Content */
+      main {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+
+      section {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      /* Lists */
+      ul,
+      ol {
+        padding-left: 20px;
+      }
+
+      ul li,
+      ol li {
+        margin-bottom: 10px;
+      }
+
+      /* Forms */
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+
+      input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+      }
+
+      footer p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Basics</h1>
+      <p>Learn HTML with beautiful examples and modern styling!</p>
+    </header>
+
+    <main>
+      <!-- Section 1: Headings -->
+      <section>
+        <h2>1. Headings</h2>
+        <p>
+          HTML provides six levels of headings, from <code>&lt;h1&gt;</code> to
+          <code>&lt;h6&gt;</code>.
+        </p>
+        <pre>
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+            </pre
+        >
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+      </section>
+
+      <!-- Section 2: Paragraphs -->
+      <section>
+        <h2>2. Paragraphs</h2>
+        <p>Use the <code>&lt;p&gt;</code> tag to create paragraphs.</p>
+        <pre>
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;p&gt;This is another paragraph.&lt;/p&gt;
+            </pre
+        >
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+      </section>
+
+      <!-- Section 3: Links -->
+      <section>
+        <h2>3. Links</h2>
+        <p>Use the <code>&lt;a&gt;</code> tag to create hyperlinks.</p>
+        <pre>
+&lt;a href="https://www.example.com" target="_blank"&gt;Visit Example.com&lt;/a&gt;
+            </pre
+        >
+        <a href="https://www.example.com" target="_blank">Visit Example.com</a>
+      </section>
+
+      <!-- Section 4: Images -->
+      <section>
+        <h2>4. Images</h2>
+        <p>Use the <code>&lt;img&gt;</code> tag to embed images.</p>
+        <pre>
+&lt;img src="https://via.placeholder.com/150" alt="Placeholder Image"&gt;
+            </pre
+        >
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image" />
+      </section>
+
+      <!-- Section 5: Lists -->
+      <section>
+        <h2>5. Lists</h2>
+        <p>
+          HTML supports ordered (<code>&lt;ol&gt;</code>) and unordered
+          (<code>&lt;ul&gt;</code>) lists.
+        </p>
+        <pre>
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;First&lt;/li&gt;
+    &lt;li&gt;Second&lt;/li&gt;
+    &lt;li&gt;Third&lt;/li&gt;
+&lt;/ol&gt;
+            </pre
+        >
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+        <ol>
+          <li>First</li>
+          <li>Second</li>
+          <li>Third</li>
+        </ol>
+      </section>
+
+      <!-- Section 6: Forms -->
+      <section>
+        <h2>6. Forms</h2>
+        <p>Use the <code>&lt;form&gt;</code> tag to create forms.</p>
+        <pre>
+&lt;form action="/submit" method="post"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+            </pre
+        >
+        <form action="/submit" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 HTML Basics. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

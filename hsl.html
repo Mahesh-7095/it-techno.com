@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HSL Colors</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .hsl-example {
+        background-color: #fff;
+        margin: 10px 0;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .hsl-example h2 {
+        margin-top: 0;
+      }
+      .hsl-example p {
+        line-height: 1.6;
+      }
+      .hsl-example pre {
+        background-color: #f8f8f8;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .hsl-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      .color-box {
+        width: 100px;
+        height: 100px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HSL Colors</h1>
+    </header>
+
+    <div class="container">
+      <div class="hsl-example">
+        <h2>What is HSL?</h2>
+        <p>
+          HSL stands for <strong>Hue, Saturation, Lightness</strong>. It is a
+          color model where colors are defined by:
+        </p>
+        <ul>
+          <li><strong>Hue</strong>: A degree on the color wheel (0-360).</li>
+          <li>
+            <strong>Saturation</strong>: A percentage (0% = gray, 100% = full
+            color).
+          </li>
+          <li>
+            <strong>Lightness</strong>: A percentage (0% = black, 100% = white).
+          </li>
+        </ul>
+        <p>Example: <code>hsl(0, 100%, 50%)</code> represents pure red.</p>
+      </div>
+
+      <div class="hsl-example">
+        <h2>HSL Syntax</h2>
+        <p>The syntax for HSL colors is:</p>
+        <pre><code>
+hsl(hue, saturation, lightness)
+            </code></pre>
+        <p>
+          Where <code>hue</code> is a degree (0-360), and
+          <code>saturation</code> and <code>lightness</code> are percentages
+          (0%-100%).
+        </p>
+      </div>
+
+      <div class="hsl-example">
+        <h2>Examples of HSL Colors</h2>
+        <pre><code>
+&lt;div style="background-color: hsl(0, 100%, 50%);"&gt;&lt;/div&gt; &lt;!-- Red --&gt;
+&lt;div style="background-color: hsl(120, 100%, 50%);"&gt;&lt;/div&gt; &lt;!-- Green --&gt;
+&lt;div style="background-color: hsl(240, 100%, 50%);"&gt;&lt;/div&gt; &lt;!-- Blue --&gt;
+&lt;div style="background-color: hsl(39, 100%, 50%);"&gt;&lt;/div&gt; &lt;!-- Orange --&gt;
+            </code></pre>
+        <div
+          class="color-box"
+          style="background-color: hsl(0, 100%, 50%)"
+        ></div>
+        <div
+          class="color-box"
+          style="background-color: hsl(120, 100%, 50%)"
+        ></div>
+        <div
+          class="color-box"
+          style="background-color: hsl(240, 100%, 50%)"
+        ></div>
+        <div
+          class="color-box"
+          style="background-color: hsl(39, 100%, 50%)"
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Ordered Lists</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .ordered-list-example {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .ordered-list-example h2 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .ordered-list-example p {
+        line-height: 1.6;
+      }
+      .ordered-list-example pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .ordered-list-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      ol {
+        margin: 10px 0;
+        padding-left: 20px;
+      }
+      ol.decimal {
+        list-style-type: decimal;
+      }
+      ol.upper-roman {
+        list-style-type: upper-roman;
+      }
+      ol.lower-alpha {
+        list-style-type: lower-alpha;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Ordered Lists</h1>
+    </header>
+
+    <div class="container">
+      <div class="ordered-list-example">
+        <h2>Ordered List Styles</h2>
+        <p>
+          You can change the numbering style of an ordered list using the
+          <code>list-style-type</code> property.
+        </p>
+        <pre><code>
+&lt;ol class="decimal"&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol class="upper-roman"&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol class="lower-alpha"&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;
+            </code></pre>
+        <ol class="decimal">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ol>
+        <ol class="upper-roman">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ol>
+        <ol class="lower-alpha">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>

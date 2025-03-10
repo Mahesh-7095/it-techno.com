@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Elements Examples</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .element {
+        background-color: #fff;
+        margin: 10px 0;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .element h2 {
+        margin-top: 0;
+      }
+      .element p {
+        line-height: 1.6;
+      }
+      .element pre {
+        background-color: #f8f8f8;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .element code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Elements Examples</h1>
+    </header>
+
+    <div class="container">
+      <div class="element">
+        <h2>Headings</h2>
+        <p>
+          HTML provides six levels of headings, from <code>&lt;h1&gt;</code> to
+          <code>&lt;h6&gt;</code>.
+        </p>
+        <pre><code>
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+            </code></pre>
+      </div>
+
+      <div class="element">
+        <h2>Paragraphs</h2>
+        <p>Paragraphs are defined with the <code>&lt;p&gt;</code> tag.</p>
+        <pre><code>
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;p&gt;This is another paragraph.&lt;/p&gt;
+            </code></pre>
+      </div>
+
+      <div class="element">
+        <h2>Links</h2>
+        <p>Links are created using the <code>&lt;a&gt;</code> tag.</p>
+        <pre><code>
+&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
+            </code></pre>
+      </div>
+
+      <div class="element">
+        <h2>Images</h2>
+        <p>Images are embedded using the <code>&lt;img&gt;</code> tag.</p>
+        <pre><code>
+&lt;img src="image.jpg" alt="Description of image"&gt;
+            </code></pre>
+      </div>
+
+      <div class="element">
+        <h2>Lists</h2>
+        <p>
+          HTML supports ordered (<code>&lt;ol&gt;</code>) and unordered
+          (<code>&lt;ul&gt;</code>) lists.
+        </p>
+        <pre><code>
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;
+            </code></pre>
+      </div>
+
+      <div class="element">
+        <h2>Forms</h2>
+        <p>
+          Forms are created using the <code>&lt;form&gt;</code> tag and can
+          contain various input elements.
+        </p>
+        <pre><code>
+&lt;form action="/submit" method="post"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;
+
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;
+
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+            </code></pre>
+      </div>
+
+      <div class="element">
+        <h2>Tables</h2>
+        <p>Tables are created using the <code>&lt;table&gt;</code> tag.</p>
+        <pre><code>
+&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+        &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Row 2, Cell 1&lt;/td&gt;
+        &lt;td&gt;Row 2, Cell 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+            </code></pre>
+      </div>
+    </div>
+  </body>
+</html>

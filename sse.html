@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Server-Sent Events</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .sse-example {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .sse-example h2 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .sse-example p {
+        line-height: 1.6;
+      }
+      .sse-example pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .sse-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Server-Sent Events</h1>
+    </header>
+
+    <div class="container">
+      <div class="sse-example">
+        <h2>Using Server-Sent Events</h2>
+        <p>
+          Server-Sent Events (SSE) allow the server to push updates to the
+          client.
+        </p>
+        <pre><code>
+&lt;p id="sseOutput"&gt;Waiting for updates...&lt;/p&gt;
+&lt;script&gt;
+    const eventSource = new EventSource("sse.php");
+    eventSource.onmessage = (event) => {
+        document.getElementById("sseOutput").innerText = event.data;
+    };
+&lt;/script&gt;
+            </code></pre>
+        <p id="sseOutput">Waiting for updates...</p>
+        <script>
+          // Simulate SSE for demonstration purposes
+          const sseOutput = document.getElementById("sseOutput");
+          setInterval(() => {
+            sseOutput.innerText = "Update: " + new Date().toLocaleTimeString();
+          }, 1000);
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

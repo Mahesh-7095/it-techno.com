@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML vs XHTML</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .html-xhtml-example {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .html-xhtml-example h2 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .html-xhtml-example p {
+        line-height: 1.6;
+      }
+      .html-xhtml-example pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .html-xhtml-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML vs XHTML</h1>
+    </header>
+
+    <div class="container">
+      <div class="html-xhtml-example">
+        <h2>Differences Between HTML and XHTML</h2>
+        <p>
+          HTML and XHTML are both markup languages, but they have some key
+          differences:
+        </p>
+        <ul>
+          <li>
+            <strong>Syntax</strong>: XHTML is stricter and requires well-formed
+            XML syntax.
+          </li>
+          <li>
+            <strong>Case Sensitivity</strong>: XHTML is case-sensitive, while
+            HTML is not.
+          </li>
+          <li>
+            <strong>Self-Closing Tags</strong>: XHTML requires self-closing tags
+            (e.g., <code>&lt;br /&gt;</code>).
+          </li>
+          <li>
+            <strong>DOCTYPE</strong>: XHTML uses a different DOCTYPE
+            declaration.
+          </li>
+        </ul>
+      </div>
+
+      <div class="html-xhtml-example">
+        <h2>HTML Example</h2>
+        <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;HTML Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;This is an HTML document.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+      </div>
+
+      <div class="html-xhtml-example">
+        <h2>XHTML Example</h2>
+        <pre><code>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+    &lt;title&gt;XHTML Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;This is an XHTML document.&lt;/p&gt;
+    &lt;br /&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+      </div>
+    </div>
+  </body>
+</html>

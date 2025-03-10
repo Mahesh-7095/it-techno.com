@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Iframes</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .iframe-example {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .iframe-example h2 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .iframe-example p {
+        line-height: 1.6;
+      }
+      .iframe-example pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .iframe-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      iframe {
+        width: 100%;
+        height: 300px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Iframes</h1>
+    </header>
+
+    <div class="container">
+      <div class="iframe-example">
+        <h2>Embedding Content with Iframes</h2>
+        <p>
+          The <code>&lt;iframe&gt;</code> element is used to embed external
+          content, such as web pages, videos, or maps.
+        </p>
+        <pre><code>
+&lt;iframe src="https://www.example.com"&gt;&lt;/iframe&gt;
+            </code></pre>
+        <iframe src="https://www.example.com"></iframe>
+      </div>
+
+      <div class="iframe-example">
+        <h2>Embedding YouTube Videos</h2>
+        <p>
+          You can embed YouTube videos using an <code>&lt;iframe&gt;</code>.
+        </p>
+        <pre><code>
+&lt;iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"&gt;&lt;/iframe&gt;
+            </code></pre>
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+      </div>
+    </div>
+  </body>
+</html>

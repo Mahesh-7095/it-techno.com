@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Input Attributes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .input-attributes-example {
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .input-attributes-example h2 {
+            margin-top: 0;
+            color: #007BFF;
+        }
+        .input-attributes-example p {
+            line-height: 1.6;
+        }
+        .input-attributes-example pre {
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .input-attributes-example code {
+            font-family: Consolas, monospace;
+            color: #d63384;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HTML Input Attributes</h1>
+    </header>
+
+    <div class="container">
+        <div class="input-attributes-example">
+            <h2>Common Input Attributes</h2>
+            <p>HTML input elements support attributes like <code>placeholder</code>, <code>required</code>, <code>readonly</code>, and <code>disabled</code>.</p>
+            <pre><code>
+&lt;form&gt;
+    &lt;label for="placeholder"&gt;Placeholder:&lt;/label&gt;
+    &lt;input type="text" id="placeholder" name="placeholder" placeholder="Enter text"&gt;
+
+    &lt;label for="required"&gt;Required:&lt;/label&gt;
+    &lt;input type="text" id="required" name="required" required&gt;
+
+    &lt;label for="readonly"&gt;Readonly:&lt;/label&gt;
+    &lt;input type="text" id="readonly" name="readonly" value="Readonly" readonly&gt;
+
+    &lt;label for="disabled"&gt;Disabled:&lt;/label&gt;
+    &lt;input type="text" id="disabled" name="disabled" value="Disabled" disabled&gt;
+
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+            </code></pre>
+            <form>
+                <label for="placeholder">Placeholder:</label>
+                <input type="text" id="placeholder" name="placeholder" placeholder="Enter text">
+
+                <label for="required">Required:</label>
+                <input type="text" id="

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .form-example {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .form-example h2 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .form-example p {
+        line-height: 1.6;
+      }
+      .form-example pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .form-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      input,
+      textarea,
+      select,
+      button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      button {
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Forms</h1>
+    </header>
+
+    <div class="container">
+      <div class="form-example">
+        <h2>Basic Form</h2>
+        <p>
+          Use the <code>&lt;form&gt;</code> tag to create a form. Common form
+          elements include <code>&lt;input&gt;</code>,
+          <code>&lt;textarea&gt;</code>, and <code>&lt;button&gt;</code>.
+        </p>
+        <pre><code>
+&lt;form&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+            </code></pre>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

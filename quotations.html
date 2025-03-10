@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Quotations</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .quotation-example {
+        background-color: #fff;
+        margin: 10px 0;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .quotation-example h2 {
+        margin-top: 0;
+      }
+      .quotation-example pre {
+        background-color: #f8f8f8;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .quotation-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      blockquote {
+        border-left: 5px solid #ccc;
+        padding-left: 10px;
+        margin: 10px 0;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Quotations</h1>
+    </header>
+
+    <div class="container">
+      <div class="quotation-example">
+        <h2>Blockquote</h2>
+        <p>
+          The <code>&lt;blockquote&gt;</code> tag is used for long quotations.
+        </p>
+        <pre><code>
+&lt;blockquote&gt;
+    This is a long quotation. It is often displayed with indentation.
+&lt;/blockquote&gt;
+            </code></pre>
+        <blockquote>
+          This is a long quotation. It is often displayed with indentation.
+        </blockquote>
+      </div>
+
+      <div class="quotation-example">
+        <h2>Inline Quotation</h2>
+        <p>
+          The <code>&lt;q&gt;</code> tag is used for short, inline quotations.
+        </p>
+        <pre><code>
+&lt;q&gt;This is a short quotation.&lt;/q&gt;
+            </code></pre>
+        <q>This is a short quotation.</q>
+      </div>
+
+      <div class="quotation-example">
+        <h2>Citation</h2>
+        <p>
+          The <code>&lt;cite&gt;</code> tag is used to reference the title of a
+          work.
+        </p>
+        <pre><code>
+&lt;cite&gt;The Great Gatsby&lt;/cite&gt; by F. Scott Fitzgerald.
+            </code></pre>
+        <cite>The Great Gatsby</cite> by F. Scott Fitzgerald.
+      </div>
+
+      <div class="quotation-example">
+        <h2>Abbreviation</h2>
+        <p>The <code>&lt;abbr&gt;</code> tag is used for abbreviations.</p>
+        <pre><code>
+&lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt;
+            </code></pre>
+        <abbr title="World Health Organization">WHO</abbr>
+      </div>
+    </div>
+  </body>
+</html>

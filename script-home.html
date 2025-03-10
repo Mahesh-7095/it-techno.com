@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scripting Home</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: relative;
+      }
+      h1 {
+        color: #007bff;
+        text-align: center;
+      }
+      h2 {
+        color: #0056b3;
+      }
+      p {
+        line-height: 1.6;
+      }
+      pre {
+        background-color: #f8f9fa;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        overflow-x: auto;
+      }
+      code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-top: 20px;
+      }
+      .btn:hover {
+        background-color: #0056b3;
+      }
+      .nav-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+      .nav-buttons .btn {
+        margin: 0;
+      }
+      @media (max-width: 768px) {
+        .container {
+          padding: 10px;
+        }
+        .nav-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+        .nav-buttons .btn {
+          margin: 10px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Scripting!</h1>
+      <p>
+        Scripting involves writing small programs (scripts) to automate tasks or
+        manipulate data. Scripts are typically written in languages like Python,
+        Bash, or PowerShell and are used to simplify repetitive tasks, manage
+        systems, and process data.
+      </p>
+
+      <h2>What is Scripting?</h2>
+      <p>
+        Scripting is the process of writing code to automate tasks that would
+        otherwise be performed manually. Scripts are often used for system
+        administration, data processing, and task automation.
+      </p>
+
+      <h2>Why Learn Scripting?</h2>
+      <ul>
+        <li>
+          <strong>Automation:</strong> Save time by automating repetitive tasks.
+        </li>
+        <li>
+          <strong>Efficiency:</strong> Perform complex tasks with minimal
+          effort.
+        </li>
+        <li>
+          <strong>Flexibility:</strong> Use scripting languages to solve a wide
+          range of problems.
+        </li>
+      </ul>
+
+      <h2>Key Topics in Scripting</h2>
+      <ul>
+        <li>Introduction to Scripting Languages</li>
+        <li>Bash Scripting</li>
+        <li>Python Scripting</li>
+        <li>PowerShell Scripting</li>
+        <li>Automation with Scripts</li>
+      </ul>
+
+      <h2>Example: Python Script</h2>
+      <p>Here’s a simple Python script to automate file renaming:</p>
+      <pre><code>
+import os
+
+# Rename files in a directory
+directory = "path/to/directory"
+for filename in os.listdir(directory):
+    if filename.endswith(".txt"):
+        new_name = filename.replace("old_", "new_")
+        os.rename(os.path.join(directory, filename), os.path.join(directory, new_name))
+        print(f"Renamed {filename} to {new_name}")
+        </code></pre>
+
+      <!-- Navigation Buttons -->
+      <div class="nav-buttons">
+        <a href="#" class="btn">Previous</a>
+        <!-- Replace # with the previous page link -->
+        <a href="script-intro.html" class="btn">Next</a>
+      </div>
+    </div>
+  </body>
+</html>

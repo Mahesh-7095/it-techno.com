@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Images</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .image-example {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .image-example h2 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .image-example p {
+        line-height: 1.6;
+      }
+      .image-example pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .image-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Images</h1>
+    </header>
+
+    <div class="container">
+      <div class="image-example">
+        <h2>Embedding Images</h2>
+        <p>
+          Use the <code>&lt;img&gt;</code> tag to embed images in HTML. The
+          <code>src</code> attribute specifies the image path, and the
+          <code>alt</code> attribute provides alternative text.
+        </p>
+        <pre><code>
+&lt;img src="example.jpg" alt="Example Image"&gt;
+            </code></pre>
+        <img src="ittechno.png" alt="Example Image" />
+      </div>
+
+      <div class="image-example">
+        <h2>Image with Width and Height</h2>
+        <p>
+          You can specify the width and height of an image using the
+          <code>width</code> and <code>height</code> attributes.
+        </p>
+        <pre><code>
+&lt;img src="example.jpg" alt="Example Image" width="300" height="200"&gt;
+            </code></pre>
+        <img src="ittechno.png" alt="Example Image" width="300" height="200" />
+      </div>
+
+      <div class="image-example">
+        <h2>Image as a Link</h2>
+        <p>
+          You can wrap an image in an <code>&lt;a&gt;</code> tag to make it a
+          clickable link.
+        </p>
+        <pre><code>
+&lt;a href="https://www.example.com"&gt;
+    &lt;img src="example.jpg" alt="Example Image"&gt;
+&lt;/a&gt;
+            </code></pre>
+        <a href="ittechno.png">
+          <img src="ittechno.png" alt="Example Image" />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

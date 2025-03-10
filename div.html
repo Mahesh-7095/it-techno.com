@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Div Element</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .div-example {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .div-example h2 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .div-example p {
+        line-height: 1.6;
+      }
+      .div-example pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .div-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      .box {
+        background-color: #007bff;
+        color: #fff;
+        padding: 20px;
+        margin: 10px 0;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Div Element</h1>
+    </header>
+
+    <div class="container">
+      <div class="div-example">
+        <h2>Using the &lt;div&gt; Element</h2>
+        <p>
+          The <code>&lt;div&gt;</code> element is a block-level container used
+          to group and style content.
+        </p>
+        <pre><code>
+&lt;div class="box"&gt;
+    This is a div element.
+&lt;/div&gt;
+            </code></pre>
+        <div class="box">This is a div element.</div>
+      </div>
+
+      <div class="div-example">
+        <h2>Grouping Content with Div</h2>
+        <p>
+          You can use multiple <code>&lt;div&gt;</code> elements to group and
+          style different sections of content.
+        </p>
+        <pre><code>
+&lt;div class="box"&gt;
+    &lt;h3&gt;Section 1&lt;/h3&gt;
+    &lt;p&gt;This is the first section.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="box"&gt;
+    &lt;h3&gt;Section 2&lt;/h3&gt;
+    &lt;p&gt;This is the second section.&lt;/p&gt;
+&lt;/div&gt;
+            </code></pre>
+        <div class="box">
+          <h3>Section 1</h3>
+          <p>This is the first section.</p>
+        </div>
+        <div class="box">
+          <h3>Section 2</h3>
+          <p>This is the second section.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

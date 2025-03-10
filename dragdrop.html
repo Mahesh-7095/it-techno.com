@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Drag and Drop</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .dragdrop-example {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .dragdrop-example h2 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .dragdrop-example p {
+        line-height: 1.6;
+      }
+      .dragdrop-example pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .dragdrop-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      #dropzone {
+        width: 300px;
+        height: 200px;
+        border: 2px dashed #007bff;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+      }
+      #dropzone.dragover {
+        background-color: #f0f8ff;
+      }
+      #dragitem {
+        width: 100px;
+        height: 100px;
+        background-color: #007bff;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        cursor: grab;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Drag and Drop</h1>
+    </header>
+
+    <div class="container">
+      <div class="dragdrop-example">
+        <h2>Drag and Drop Example</h2>
+        <p>
+          Use the HTML5 Drag and Drop API to implement drag-and-drop
+          functionality.
+        </p>
+        <pre><code>
+&lt;div id="dragitem" draggable="true"&gt;Drag Me&lt;/div&gt;
+&lt;div id="dropzone"&gt;Drop Here&lt;/div&gt;
+&lt;script&gt;
+    const dragItem = document.getElementById("dragitem");
+    const dropZone = document.getElementById("dropzone");
+
+    dragItem.addEventListener("dragstart", (e) => {
+        e.dataTransfer.setData("text", e.target.id);
+    });
+
+    dropZone.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        dropZone.classList.add("dragover");
+    });
+
+    dropZone.addEventListener("dragleave", () => {
+        dropZone.classList.remove("dragover");
+    });
+
+    dropZone.addEventListener("drop", (e) => {
+        e.preventDefault();
+        const data = e.dataTransfer.getData("text");
+        dropZone.appendChild(document.getElementById(data));
+        dropZone.classList.remove("dragover");
+    });
+&lt;/script&gt;
+            </code></pre>
+        <div id="dragitem" draggable="true">Drag Me</div>
+        <div id="dropzone">Drop Here</div>
+        <script>
+          const dragItem = document.getElementById("dragitem");
+          const dropZone = document.getElementById("dropzone");
+
+          dragItem.addEventListener("dragstart", (e) => {
+            e.dataTransfer.setData("text", e.target.id);
+          });
+
+          dropZone.addEventListener("dragover", (e) => {
+            e.preventDefault();
+            dropZone.classList.add("dragover");
+          });
+
+          dropZone.addEventListener("dragleave", () => {
+            dropZone.classList.remove("dragover");
+          });
+
+          dropZone.addEventListener("drop", (e) => {
+            e.preventDefault();
+            const data = e.dataTransfer.getData("text");
+            dropZone.appendChild(document.getElementById(data));
+            dropZone.classList.remove("dragover");
+          });
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

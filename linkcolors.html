@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link Colors</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .link-color-example {
+        background-color: #fff;
+        margin: 10px 0;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .link-color-example h2 {
+        margin-top: 0;
+      }
+      .link-color-example p {
+        line-height: 1.6;
+      }
+      .link-color-example pre {
+        background-color: #f8f8f8;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .link-color-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      /* Link Colors */
+      a:link {
+        color: #007bff; /* Normal link */
+      }
+      a:visited {
+        color: #800080; /* Visited link */
+      }
+      a:hover {
+        color: #ff5733; /* Hovered link */
+      }
+      a:active {
+        color: #00ff00; /* Active link */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Link Colors</h1>
+    </header>
+
+    <div class="container">
+      <div class="link-color-example">
+        <h2>Styling Link Colors</h2>
+        <p>
+          You can style links using CSS to change their colors for different
+          states:
+        </p>
+        <ul>
+          <li><code>a:link</code> – Normal, unvisited link.</li>
+          <li><code>a:visited</code> – Visited link.</li>
+          <li><code>a:hover</code> – Link when hovered over.</li>
+          <li><code>a:active</code> – Link when clicked.</li>
+        </ul>
+        <pre><code>
+a:link {
+    color: #007BFF; /* Normal link */
+}
+a:visited {
+    color: #800080; /* Visited link */
+}
+a:hover {
+    color: #FF5733; /* Hovered link */
+}
+a:active {
+    color: #00FF00; /* Active link */
+}
+            </code></pre>
+        <p><a href="https://www.example.com">Example Link</a></p>
+      </div>
+    </div>
+  </body>
+</html>

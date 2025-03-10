@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Links</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .link-example {
+        background-color: #fff;
+        margin: 10px 0;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .link-example h2 {
+        margin-top: 0;
+      }
+      .link-example p {
+        line-height: 1.6;
+      }
+      .link-example pre {
+        background-color: #f8f8f8;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .link-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Links</h1>
+    </header>
+
+    <div class="container">
+      <div class="link-example">
+        <h2>Basic Hyperlink</h2>
+        <p>
+          Use the <code>&lt;a&gt;</code> tag to create a hyperlink. The
+          <code>href</code> attribute specifies the destination URL.
+        </p>
+        <pre><code>
+&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
+            </code></pre>
+        <p><a href="https://www.example.com">Visit Example.com</a></p>
+      </div>
+
+      <div class="link-example">
+        <h2>Link to Another Page</h2>
+        <p>
+          You can link to another page on your website by specifying the
+          relative path in the <code>href</code> attribute.
+        </p>
+        <pre><code>
+&lt;a href="about.html"&gt;About Us&lt;/a&gt;
+            </code></pre>
+        <p><a href="about.html">About Us</a></p>
+      </div>
+
+      <div class="link-example">
+        <h2>Link to an Email Address</h2>
+        <p>
+          Use the <code>mailto:</code> protocol to create a link that opens the
+          user's email client.
+        </p>
+        <pre><code>
+&lt;a href="mailto:example@example.com"&gt;Send Email&lt;/a&gt;
+            </code></pre>
+        <p><a href="mailto:example@example.com">Send Email</a></p>
+      </div>
+
+      <div class="link-example">
+        <h2>Link to a Phone Number</h2>
+        <p>
+          Use the <code>tel:</code> protocol to create a link that dials a phone
+          number on mobile devices.
+        </p>
+        <pre><code>
+&lt;a href="tel:+1234567890"&gt;Call Us&lt;/a&gt;
+            </code></pre>
+        <p><a href="tel:+1234567890">Call Us</a></p>
+      </div>
+    </div>
+  </body>
+</html>

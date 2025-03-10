@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SQL Home</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .example {
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      h1,
+      h2 {
+        color: #007bff;
+      }
+      pre {
+        background-color: #f8f9fa;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        overflow-x: auto;
+      }
+      code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #ddd;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #007bff;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to SQL Home</h1>
+      <p>
+        This page demonstrates basic SQL concepts with examples and code
+        snippets.
+      </p>
+
+      <!-- Example 1: SELECT Query -->
+      <div class="example">
+        <h2>1. SELECT Query</h2>
+        <p>Retrieve all records from a table.</p>
+        <pre><code>
+SELECT * FROM employees;
+            </code></pre>
+        <h3>Example Table: Employees</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Department</th>
+              <th>Salary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>John Doe</td>
+              <td>HR</td>
+              <td>50000</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jane Smith</td>
+              <td>IT</td>
+              <td>60000</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Alice Johnson</td>
+              <td>Finance</td>
+              <td>55000</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          <strong>Output:</strong> Displays all rows from the
+          <code>employees</code> table.
+        </p>
+      </div>
+
+      <!-- Example 2: INSERT Query -->
+      <div class="example">
+        <h2>2. INSERT Query</h2>
+        <p>Add a new record to a table.</p>
+        <pre><code>
+INSERT INTO employees (ID, Name, Department, Salary)
+VALUES (4, 'Bob Brown', 'Marketing', 48000);
+            </code></pre>
+        <p>
+          <strong>Result:</strong> A new row is added to the
+          <code>employees</code> table.
+        </p>
+      </div>
+
+      <!-- Example 3: UPDATE Query -->
+      <div class="example">
+        <h2>3. UPDATE Query</h2>
+        <p>Modify an existing record in a table.</p>
+        <pre><code>
+UPDATE employees
+SET Salary = 52000
+WHERE ID = 1;
+            </code></pre>
+        <p>
+          <strong>Result:</strong> The salary of the employee with
+          <code>ID = 1</code> is updated to 52000.
+        </p>
+      </div>
+
+      <!-- Example 4: DELETE Query -->
+      <div class="example">
+        <h2>4. DELETE Query</h2>
+        <p>Remove a record from a table.</p>
+        <pre><code>
+DELETE FROM employees
+WHERE ID = 3;
+            </code></pre>
+        <p>
+          <strong>Result:</strong> The employee with <code>ID = 3</code> is
+          removed from the <code>employees</code> table.
+        </p>
+      </div>
+
+      <!-- Example 5: WHERE Clause -->
+      <div class="example">
+        <h2>5. WHERE Clause</h2>
+        <p>Filter records based on a condition.</p>
+        <pre><code>
+SELECT * FROM employees
+WHERE Department = 'IT';
+            </code></pre>
+        <p>
+          <strong>Output:</strong> Displays only employees in the IT department.
+        </p>
+      </div>
+
+      <!-- Example 6: ORDER BY Clause -->
+      <div class="example">
+        <h2>6. ORDER BY Clause</h2>
+        <p>Sort records in ascending or descending order.</p>
+        <pre><code>
+SELECT * FROM employees
+ORDER BY Salary DESC;
+            </code></pre>
+        <p>
+          <strong>Output:</strong> Displays employees sorted by salary in
+          descending order.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

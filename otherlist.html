@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Other Lists</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .other-list-example {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .other-list-example h2 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .other-list-example p {
+        line-height: 1.6;
+      }
+      .other-list-example pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .other-list-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      dl {
+        margin: 10px 0;
+      }
+      dt {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      dd {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Other Lists</h1>
+    </header>
+
+    <div class="container">
+      <div class="other-list-example">
+        <h2>Description Lists</h2>
+        <p>
+          Use the <code>&lt;dl&gt;</code> tag to create a description list. Each
+          term is defined with <code>&lt;dt&gt;</code>, and its description is
+          defined with <code>&lt;dd&gt;</code>.
+        </p>
+        <pre><code>
+&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+    &lt;dt&gt;JS&lt;/dt&gt;
+    &lt;dd&gt;JavaScript&lt;/dd&gt;
+&lt;/dl&gt;
+            </code></pre>
+        <dl>
+          <dt>HTML</dt>
+          <dd>HyperText Markup Language</dd>
+          <dt>CSS</dt>
+          <dd>Cascading Style Sheets</dd>
+          <dt>JS</dt>
+          <dd>JavaScript</dd>
+        </dl>
+      </div>
+    </div>
+  </body>
+</html>

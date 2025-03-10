@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Block & Inline Elements</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .block-inline-example {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .block-inline-example h2 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .block-inline-example p {
+        line-height: 1.6;
+      }
+      .block-inline-example pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .block-inline-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      .block {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        margin: 10px 0;
+      }
+      .inline {
+        background-color: #ff5733;
+        color: #fff;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Block & Inline Elements</h1>
+    </header>
+
+    <div class="container">
+      <div class="block-inline-example">
+        <h2>Block-Level Elements</h2>
+        <p>
+          Block-level elements start on a new line and take up the full width of
+          their container. Examples include <code>&lt;div&gt;</code>,
+          <code>&lt;p&gt;</code>, and <code>&lt;h1&gt;</code>.
+        </p>
+        <pre><code>
+&lt;div class="block"&gt;This is a block-level element.&lt;/div&gt;
+            </code></pre>
+        <div class="block">This is a block-level element.</div>
+      </div>
+
+      <div class="block-inline-example">
+        <h2>Inline Elements</h2>
+        <p>
+          Inline elements do not start on a new line and only take up as much
+          width as necessary. Examples include <code>&lt;span&gt;</code>,
+          <code>&lt;a&gt;</code>, and <code>&lt;strong&gt;</code>.
+        </p>
+        <pre><code>
+&lt;span class="inline"&gt;This is an inline element.&lt;/span&gt;
+            </code></pre>
+        <span class="inline">This is an inline element.</span>
+      </div>
+    </div>
+  </body>
+</html>

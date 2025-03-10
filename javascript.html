@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML JavaScript</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .javascript-example {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .javascript-example h2 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .javascript-example p {
+        line-height: 1.6;
+      }
+      .javascript-example pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .javascript-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML JavaScript</h1>
+    </header>
+
+    <div class="container">
+      <div class="javascript-example">
+        <h2>Using JavaScript in HTML</h2>
+        <p>
+          JavaScript can be added to HTML using the
+          <code>&lt;script&gt;</code> tag.
+        </p>
+        <pre><code>
+&lt;button onclick="alert('Hello, World!')"&gt;Click Me&lt;/button&gt;
+            </code></pre>
+        <button onclick="alert('Hello, World!')">Click Me</button>
+      </div>
+
+      <div class="javascript-example">
+        <h2>External JavaScript</h2>
+        <p>
+          You can also link to an external JavaScript file using the
+          <code>&lt;script&gt;</code> tag.
+        </p>
+        <pre><code>
+&lt;script src="script.js"&gt;&lt;/script&gt;
+            </code></pre>
+        <p>
+          Create a file named <code>script.js</code> and add your JavaScript
+          code there.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

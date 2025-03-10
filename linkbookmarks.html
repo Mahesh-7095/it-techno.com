@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link Bookmarks</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .bookmark-example {
+        background-color: #fff;
+        margin: 10px 0;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .bookmark-example h2 {
+        margin-top: 0;
+      }
+      .bookmark-example p {
+        line-height: 1.6;
+      }
+      .bookmark-example pre {
+        background-color: #f8f8f8;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .bookmark-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Link Bookmarks</h1>
+    </header>
+
+    <div class="container">
+      <div class="bookmark-example">
+        <h2>Creating Bookmarks</h2>
+        <p>
+          Bookmarks allow you to link to specific sections of a webpage. Use the
+          <code>id</code> attribute to create a bookmark and the
+          <code>href</code> attribute with <code>#</code> to link to it.
+        </p>
+        <pre><code>
+&lt;h2 id="section1"&gt;Section 1&lt;/h2&gt;
+&lt;p&gt;This is the content of section 1.&lt;/p&gt;
+&lt;a href="#section1"&gt;Go to Section 1&lt;/a&gt;
+            </code></pre>
+        <p><a href="#section1">Go to Section 1</a></p>
+      </div>
+
+      <div class="bookmark-example">
+        <h2 id="section1">Section 1</h2>
+        <p>This is the content of section 1.</p>
+        <p><a href="#top">Back to Top</a></p>
+      </div>
+
+      <div class="bookmark-example">
+        <h2 id="section2">Section 2</h2>
+        <p>This is the content of section 2.</p>
+        <p><a href="#top">Back to Top</a></p>
+      </div>
+
+      <div class="bookmark-example">
+        <h2 id="section3">Section 3</h2>
+        <p>This is the content of section 3.</p>
+        <p><a href="#top">Back to Top</a></p>
+      </div>
+    </div>
+  </body>
+</html>

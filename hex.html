@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hexadecimal Colors</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .hex-example {
+        background-color: #fff;
+        margin: 10px 0;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .hex-example h2 {
+        margin-top: 0;
+      }
+      .hex-example p {
+        line-height: 1.6;
+      }
+      .hex-example pre {
+        background-color: #f8f8f8;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .hex-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      .color-box {
+        width: 100px;
+        height: 100px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Hexadecimal Colors</h1>
+    </header>
+
+    <div class="container">
+      <div class="hex-example">
+        <h2>What is Hexadecimal?</h2>
+        <p>
+          Hexadecimal (or hex) colors are defined using a 6-digit code prefixed
+          with a <code>#</code>. Each pair of digits represents the red, green,
+          and blue components of the color.
+        </p>
+        <p>
+          Example: <code>#FF5733</code> represents a shade of orange, where
+          <code>FF</code> is red, <code>57</code> is green, and
+          <code>33</code> is blue.
+        </p>
+      </div>
+
+      <div class="hex-example">
+        <h2>Hexadecimal Syntax</h2>
+        <p>The syntax for hexadecimal colors is:</p>
+        <pre><code>
+#RRGGBB
+            </code></pre>
+        <p>
+          Where <code>RR</code>, <code>GG</code>, and <code>BB</code> are
+          hexadecimal values (0-9, A-F) representing red, green, and blue.
+        </p>
+      </div>
+
+      <div class="hex-example">
+        <h2>Examples of Hexadecimal Colors</h2>
+        <pre><code>
+&lt;div style="background-color: #FF5733;"&gt;&lt;/div&gt; &lt;!-- Orange --&gt;
+&lt;div style="background-color: #33FF57;"&gt;&lt;/div&gt; &lt;!-- Lime Green --&gt;
+&lt;div style="background-color: #3357FF;"&gt;&lt;/div&gt; &lt;!-- Blue --&gt;
+&lt;div style="background-color: #FF33A1;"&gt;&lt;/div&gt; &lt;!-- Pink --&gt;
+            </code></pre>
+        <div class="color-box" style="background-color: #ff5733"></div>
+        <div class="color-box" style="background-color: #33ff57"></div>
+        <div class="color-box" style="background-color: #3357ff"></div>
+        <div class="color-box" style="background-color: #ff33a1"></div>
+      </div>
+    </div>
+  </body>
+</html>

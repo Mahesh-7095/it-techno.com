@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Head Element</title>
+    <meta
+      name="description"
+      content="This is an example of the HTML head element."
+    />
+    <meta name="keywords" content="HTML, head, meta, title, style" />
+    <meta name="author" content="Your Name" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .head-example {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .head-example h2 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .head-example p {
+        line-height: 1.6;
+      }
+      .head-example pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .head-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Head Element</h1>
+    </header>
+
+    <div class="container">
+      <div class="head-example">
+        <h2>Understanding the &lt;head&gt; Element</h2>
+        <p>
+          The <code>&lt;head&gt;</code> element contains metadata, links to
+          stylesheets, scripts, and other resources. It does not display content
+          directly.
+        </p>
+        <pre><code>
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;meta name="description" content="Page description"&gt;
+    &lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;
+    &lt;meta name="author" content="Author Name"&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+            </code></pre>
+      </div>
+
+      <div class="head-example">
+        <h2>Common Elements in &lt;head&gt;</h2>
+        <ul>
+          <li>
+            <code>&lt;title&gt;</code>: Defines the title of the document (shown
+            in the browser tab).
+          </li>
+          <li>
+            <code>&lt;meta&gt;</code>: Provides metadata like character set,
+            viewport, and descriptions.
+          </li>
+          <li>
+            <code>&lt;link&gt;</code>: Links to external resources like
+            stylesheets.
+          </li>
+          <li><code>&lt;style&gt;</code>: Contains internal CSS styles.</li>
+          <li>
+            <code>&lt;script&gt;</code>: Links to or contains JavaScript code.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

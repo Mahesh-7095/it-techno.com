@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pandas Home</title>
+    <style>
+      /* Same styles as saas-home.html */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: relative;
+      }
+      h1 {
+        color: #007bff;
+        text-align: center;
+      }
+      h2 {
+        color: #0056b3;
+      }
+      p {
+        line-height: 1.6;
+      }
+      pre {
+        background-color: #f8f9fa;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        overflow-x: auto;
+      }
+      code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-top: 20px;
+      }
+      .btn:hover {
+        background-color: #0056b3;
+      }
+      .nav-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+      .nav-buttons .btn {
+        margin: 0;
+      }
+      @media (max-width: 768px) {
+        .container {
+          padding: 10px;
+        }
+        .nav-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+        .nav-buttons .btn {
+          margin: 10px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Pandas!</h1>
+      <p>
+        Pandas is a Python library for data manipulation and analysis. It
+        provides data structures like DataFrames for working with structured
+        data.
+      </p>
+
+      <h2>What is Pandas?</h2>
+      <p>
+        Pandas is a powerful library for data analysis in Python. It is built on
+        top of NumPy and provides tools for cleaning, transforming, and
+        analyzing data.
+      </p>
+
+      <h2>Why Learn Pandas?</h2>
+      <ul>
+        <li>
+          <strong>Data Manipulation:</strong> Easily clean and transform data.
+        </li>
+        <li>
+          <strong>Data Analysis:</strong> Perform operations like grouping and
+          aggregation.
+        </li>
+        <li>
+          <strong>Integration:</strong> Works well with other data science
+          libraries.
+        </li>
+      </ul>
+
+      <h2>Key Topics in Pandas</h2>
+      <ul>
+        <li>Introduction to Pandas</li>
+        <li>DataFrames and Series</li>
+        <li>Data Cleaning</li>
+        <li>Data Visualization</li>
+        <li>Time Series Analysis</li>
+      </ul>
+
+      <h2>Example: Load Data with Pandas</h2>
+      <p>Here’s an example of loading a CSV file with Pandas:</p>
+      <pre><code>
+import pandas as pd
+data = pd.read_csv('data.csv')
+print(data.head())
+        </code></pre>
+
+      <!-- Navigation Buttons -->
+      <div class="nav-buttons">
+        <a href="#" class="btn">Previous</a>
+        <!-- Replace # with the previous page link -->
+        <a href="pandas-intro.html" class="btn">Next</a>
+      </div>
+    </div>
+  </body>
+</html>

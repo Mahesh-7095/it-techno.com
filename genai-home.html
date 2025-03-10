@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generative AI Home</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: relative;
+      }
+      h1 {
+        color: #007bff;
+        text-align: center;
+      }
+      h2 {
+        color: #0056b3;
+      }
+      p {
+        line-height: 1.6;
+      }
+      pre {
+        background-color: #f8f9fa;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        overflow-x: auto;
+      }
+      code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-top: 20px;
+      }
+      .btn:hover {
+        background-color: #0056b3;
+      }
+      .nav-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+      .nav-buttons .btn {
+        margin: 0;
+      }
+      @media (max-width: 768px) {
+        .container {
+          padding: 10px;
+        }
+        .nav-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+        .nav-buttons .btn {
+          margin: 10px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Generative AI!</h1>
+      <p>
+        Generative AI refers to artificial intelligence models that can generate
+        new content, such as text, images, music, or code, based on input data.
+        These models are trained on large datasets and can produce creative and
+        realistic outputs.
+      </p>
+
+      <h2>What is Generative AI?</h2>
+      <p>
+        Generative AI involves using machine learning models to create new data
+        that resembles the training data. Examples include text generation
+        (e.g., GPT models), image generation (e.g., DALL·E), and music
+        generation.
+      </p>
+
+      <h2>Why is Generative AI Important?</h2>
+      <ul>
+        <li>
+          <strong>Creativity:</strong> Enables machines to produce creative
+          content.
+        </li>
+        <li>
+          <strong>Automation:</strong> Automates content creation for industries
+          like marketing, entertainment, and design.
+        </li>
+        <li>
+          <strong>Innovation:</strong> Drives innovation in fields like
+          healthcare, education, and art.
+        </li>
+      </ul>
+
+      <h2>Key Topics in Generative AI</h2>
+      <ul>
+        <li>Introduction to Generative Models</li>
+        <li>Text Generation (e.g., GPT)</li>
+        <li>Image Generation (e.g., DALL·E, Stable Diffusion)</li>
+        <li>Music and Audio Generation</li>
+        <li>Applications of Generative AI</li>
+      </ul>
+
+      <h2>Example: Text Generation with GPT</h2>
+      <p>
+        Here’s an example of using a Generative AI model (like GPT) to generate
+        text:
+      </p>
+      <pre><code>
+from transformers import pipeline
+
+# Load a pre-trained GPT model
+generator = pipeline('text-generation', model='gpt-2')
+
+# Generate text
+output = generator("Once upon a time", max_length=50)
+print(output[0]['generated_text'])
+        </code></pre>
+
+      <!-- Navigation Buttons -->
+      <div class="nav-buttons">
+        <a href="#" class="btn">Previous</a>
+        <!-- Replace # with the previous page link -->
+        <a href="genai-intro.html" class="btn">Next</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Home</title>
+    <style>
+      /* Same styles as saas-home.html */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: relative;
+      }
+      h1 {
+        color: #007bff;
+        text-align: center;
+      }
+      h2 {
+        color: #0056b3;
+      }
+      p {
+        line-height: 1.6;
+      }
+      pre {
+        background-color: #f8f9fa;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        overflow-x: auto;
+      }
+      code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-top: 20px;
+      }
+      .btn:hover {
+        background-color: #0056b3;
+      }
+      .nav-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+      .nav-buttons .btn {
+        margin: 0;
+      }
+      @media (max-width: 768px) {
+        .container {
+          padding: 10px;
+        }
+        .nav-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+        .nav-buttons .btn {
+          margin: 10px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Artificial Intelligence!</h1>
+      <p>
+        Artificial Intelligence (AI) involves creating systems that can perform
+        tasks requiring human intelligence, such as learning, reasoning, and
+        problem-solving.
+      </p>
+
+      <h2>What is AI?</h2>
+      <p>
+        AI is the simulation of human intelligence in machines. It includes
+        subfields like machine learning, natural language processing, and
+        computer vision.
+      </p>
+
+      <h2>Why Learn AI?</h2>
+      <ul>
+        <li>
+          <strong>Innovation:</strong> Drive innovation in various industries.
+        </li>
+        <li><strong>Automation:</strong> Automate repetitive tasks.</li>
+        <li>
+          <strong>Problem Solving:</strong> Solve complex problems using
+          data-driven insights.
+        </li>
+      </ul>
+
+      <h2>Key Topics in AI</h2>
+      <ul>
+        <li>Introduction to AI</li>
+        <li>Machine Learning</li>
+        <li>Deep Learning</li>
+        <li>Natural Language Processing</li>
+        <li>Computer Vision</li>
+      </ul>
+
+      <h2>Example: Simple AI Model</h2>
+      <p>Here’s an example of training a simple machine learning model:</p>
+      <pre><code>
+from sklearn.linear_model import LinearRegression
+model = LinearRegression()
+model.fit(X_train, y_train)
+        </code></pre>
+
+      <!-- Navigation Buttons -->
+      <div class="nav-buttons">
+        <a href="#" class="btn">Previous</a>
+        <!-- Replace # with the previous page link -->
+        <a href="ai-intro.html" class="btn">Next</a>
+      </div>
+    </div>
+  </body>
+</html>

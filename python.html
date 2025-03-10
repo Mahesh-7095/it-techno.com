@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Examples</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .example {
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      h1,
+      h2 {
+        color: #007bff;
+      }
+      pre {
+        background-color: #f8f9fa;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        overflow-x: auto;
+      }
+      code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Python Examples</h1>
+      <p>This page demonstrates Python programming concepts with examples.</p>
+
+      <!-- Example 1: Classes and Objects -->
+      <div class="example">
+        <h2>1. Classes and Objects</h2>
+        <p>Python is an object-oriented programming language.</p>
+        <pre><code>
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+    def display_info(self):
+        print(f"Brand: {self.brand}, Model: {self.model}")
+
+my_car = Car("Toyota", "Corolla")
+my_car.display_info()
+            </code></pre>
+      </div>
+
+      <!-- Example 2: Inheritance -->
+      <div class="example">
+        <h2>2. Inheritance</h2>
+        <p>Python supports inheritance to create a hierarchy of classes.</p>
+        <pre><code>
+class Animal:
+    def eat(self):
+        print("This animal eats food.")
+
+class Dog(Animal):
+    def bark(self):
+        print("The dog barks.")
+
+my_dog = Dog()
+my_dog.eat()
+my_dog.bark()
+            </code></pre>
+      </div>
+    </div>
+  </body>
+</html>

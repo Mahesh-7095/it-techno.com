@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Semantic Elements</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      nav {
+        background-color: #444;
+        padding: 10px;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        margin: 0 15px;
+      }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      main {
+        padding: 20px;
+      }
+      section {
+        margin-bottom: 20px;
+      }
+      article {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Semantic HTML</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>About Semantic HTML</h2>
+        <article>
+          <p>
+            Semantic HTML elements like <code>&lt;header&gt;</code>,
+            <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>,
+            <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, and
+            <code>&lt;footer&gt;</code> provide meaning to the structure of a
+            webpage.
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Why Use Semantic Elements?</h2>
+        <article>
+          <p>
+            Semantic elements improve accessibility, SEO, and maintainability of
+            your code.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

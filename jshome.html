@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Home</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .example {
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      h1,
+      h2 {
+        color: #007bff;
+      }
+      button {
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      pre {
+        background-color: #f8f9fa;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        overflow-x: auto;
+      }
+      code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      input {
+        padding: 8px;
+        margin: 5px 0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to JavaScript Home</h1>
+      <p>
+        This page demonstrates basic JavaScript concepts with live examples and
+        code snippets.
+      </p>
+
+      <!-- Example 1: Variables and Output -->
+      <div class="example">
+        <h2>1. Variables and Output</h2>
+        <p>Click the button to display a message using JavaScript.</p>
+        <p id="output1"></p>
+        <button onclick="displayMessage()">Click Me!</button>
+        <h3>Code:</h3>
+        <pre><code>
+function displayMessage() {
+    let message = "Hello, JavaScript!";
+    document.getElementById("output1").innerText = message;
+}
+            </code></pre>
+      </div>
+
+      <!-- Example 2: Functions -->
+      <div class="example">
+        <h2>2. Functions</h2>
+        <p>Enter two numbers to add them using a JavaScript function.</p>
+        <input type="number" id="num1" placeholder="Number 1" />
+        <input type="number" id="num2" placeholder="Number 2" />
+        <button onclick="addNumbers()">Add</button>
+        <p id="result"></p>
+        <h3>Code:</h3>
+        <pre><code>
+function addNumbers() {
+    let num1 = parseFloat(document.getElementById("num1").value);
+    let num2 = parseFloat(document.getElementById("num2").value);
+    let sum = num1 + num2;
+    document.getElementById("result").innerText = "Result: " + sum;
+}
+            </code></pre>
+      </div>
+
+      <!-- Example 3: DOM Manipulation -->
+      <div class="example">
+        <h2>3. DOM Manipulation</h2>
+        <p>Click the button to change the text below.</p>
+        <p id="changeText">
+          This text will change when you click the button below.
+        </p>
+        <button onclick="changeText()">Change Text</button>
+        <h3>Code:</h3>
+        <pre><code>
+function changeText() {
+    document.getElementById("changeText").innerText = "The text has been changed!";
+}
+            </code></pre>
+      </div>
+
+      <!-- Example 4: Event Handling -->
+      <div class="example">
+        <h2>4. Event Handling</h2>
+        <p>Move your mouse over the button to see an alert.</p>
+        <button onmouseover="showAlert()">Hover Over Me</button>
+        <h3>Code:</h3>
+        <pre><code>
+function showAlert() {
+    alert("You hovered over the button!");
+}
+            </code></pre>
+      </div>
+    </div>
+
+    <script>
+      // Example 1: Variables and Output
+      function displayMessage() {
+        let message = "Hello, JavaScript!";
+        document.getElementById("output1").innerText = message;
+      }
+
+      // Example 2: Functions
+      function addNumbers() {
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+        let sum = num1 + num2;
+        document.getElementById("result").innerText = "Result: " + sum;
+      }
+
+      // Example 3: DOM Manipulation
+      function changeText() {
+        document.getElementById("changeText").innerText =
+          "The text has been changed!";
+      }
+
+      // Example 4: Event Handling
+      function showAlert() {
+        alert("You hovered over the button!");
+      }
+    </script>
+  </body>
+</html>

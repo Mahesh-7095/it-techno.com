@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Input Form Attributes</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .input-form-attributes-example {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .input-form-attributes-example h2 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .input-form-attributes-example p {
+        line-height: 1.6;
+      }
+      .input-form-attributes-example pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .input-form-attributes-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      input,
+      button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      button {
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Input Form Attributes</h1>
+    </header>
+
+    <div class="container">
+      <div class="input-form-attributes-example">
+        <h2>Form-Specific Input Attributes</h2>
+        <p>
+          Input elements can have form-specific attributes like
+          <code>form</code>, <code>formaction</code>, <code>formenctype</code>,
+          and <code>formtarget</code>.
+        </p>
+        <pre><code>
+&lt;form id="form1"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+
+    &lt;button type="submit" formaction="/submit1" formtarget="_blank"&gt;Submit 1&lt;/button&gt;
+    &lt;button type="submit" formaction="/submit2" formtarget="_self"&gt;Submit 2&lt;/button&gt;
+&lt;/form&gt;
+            </code></pre>
+        <form id="form1">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+
+          <button type="submit" formaction="/submit1" formtarget="_blank">
+            Submit 1
+          </button>
+          <button type="submit" formaction="/submit2" formtarget="_self">
+            Submit 2
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

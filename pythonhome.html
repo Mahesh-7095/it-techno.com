@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Home</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .example {
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      h1,
+      h2 {
+        color: #007bff;
+      }
+      pre {
+        background-color: #f8f9fa;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        overflow-x: auto;
+      }
+      code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      button {
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Python Home</h1>
+      <p>
+        This page demonstrates basic Python concepts with examples and code
+        snippets.
+      </p>
+
+      <!-- Example 1: Variables and Data Types -->
+      <div class="example">
+        <h2>1. Variables and Data Types</h2>
+        <p>
+          Python supports various data types like integers, floats, strings, and
+          booleans.
+        </p>
+        <pre><code>
+# Variables
+name = "Alice"
+age = 25
+height = 5.6
+is_student = True
+
+# Output
+print("Name:", name)
+print("Age:", age)
+print("Height:", height)
+print("Is Student:", is_student)
+            </code></pre>
+        <button onclick="runPythonCode('example1')">Run Code</button>
+        <p id="output1"></p>
+      </div>
+
+      <!-- Example 2: Loops -->
+      <div class="example">
+        <h2>2. Loops</h2>
+        <p>
+          Python supports <code>for</code> and <code>while</code> loops for
+          iteration.
+        </p>
+        <pre><code>
+# For Loop
+for i in range(5):
+    print("Iteration:", i)
+
+# While Loop
+count = 0
+while count < 3:
+    print("Count:", count)
+    count += 1
+            </code></pre>
+        <button onclick="runPythonCode('example2')">Run Code</button>
+        <p id="output2"></p>
+      </div>
+
+      <!-- Example 3: Functions -->
+      <div class="example">
+        <h2>3. Functions</h2>
+        <p>Functions are defined using the <code>def</code> keyword.</p>
+        <pre><code>
+# Function Definition
+def greet(name):
+    return f"Hello, {name}!"
+
+# Function Call
+message = greet("Bob")
+print(message)
+            </code></pre>
+        <button onclick="runPythonCode('example3')">Run Code</button>
+        <p id="output3"></p>
+      </div>
+
+      <!-- Example 4: File Handling -->
+      <div class="example">
+        <h2>4. File Handling</h2>
+        <p>Python can read from and write to files.</p>
+        <pre><code>
+# Writing to a File
+with open("example.txt", "w") as file:
+    file.write("Hello, Python!")
+
+# Reading from a File
+with open("example.txt", "r") as file:
+    content = file.read()
+    print("File Content:", content)
+            </code></pre>
+        <button onclick="runPythonCode('example4')">Run Code</button>
+        <p id="output4"></p>
+      </div>
+
+      <!-- Example 5: Lists and Dictionaries -->
+      <div class="example">
+        <h2>5. Lists and Dictionaries</h2>
+        <p>
+          Lists and dictionaries are commonly used data structures in Python.
+        </p>
+        <pre><code>
+# List
+fruits = ["apple", "banana", "cherry"]
+print("Fruits:", fruits)
+
+# Dictionary
+person = {"name": "Alice", "age": 25, "city": "New York"}
+print("Person:", person)
+            </code></pre>
+        <button onclick="runPythonCode('example5')">Run Code</button>
+        <p id="output5"></p>
+      </div>
+    </div>
+
+    <script>
+      // Function to simulate running Python code (for demonstration purposes)
+      function runPythonCode(exampleId) {
+        let outputElement = document.getElementById(
+          `output${exampleId.slice(-1)}`
+        );
+        let code = "";
+
+        switch (exampleId) {
+          case "example1":
+            code = `Name: Alice\nAge: 25\nHeight: 5.6\nIs Student: True`;
+            break;
+          case "example2":
+            code = `Iteration: 0\nIteration: 1\nIteration: 2\nIteration: 3\nIteration: 4\nCount: 0\nCount: 1\nCount: 2`;
+            break;
+          case "example3":
+            code = `Hello, Bob!`;
+            break;
+          case "example4":
+            code = `File Content: Hello, Python!`;
+            break;
+          case "example5":
+            code = `Fruits: ['apple', 'banana', 'cherry']\nPerson: {'name': 'Alice', 'age': 25, 'city': 'New York'}`;
+            break;
+          default:
+            code = "No output available.";
+        }
+
+        outputElement.innerText = code;
+      }
+    </script>
+  </body>
+</html>

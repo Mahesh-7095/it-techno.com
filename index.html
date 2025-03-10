@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT TECHNO</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Welcome Message -->
+    <header class="welcome-header">
+      <h1>Welcome to IT TECHNO</h1>
+      <div class="search-container">
+        <input
+          type="text"
+          id="search-bar"
+          placeholder="Search for a topic..."
+          oninput="showSearchResults()"
+        />
+        <button onclick="searchMenu()">Search</button>
+        <div id="search-results" class="search-results"></div>
+      </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <ul class="navbar-menu">
+          <li><a href="#" onclick="toggleSidebar('html')">HTML</a></li>
+          <li><a href="#" onclick="toggleSidebar('css')">CSS</a></li>
+          <li>
+            <a href="#" onclick="toggleSidebar('javascript')">JAVASCRIPT</a>
+          </li>
+          <li><a href="#" onclick="toggleSidebar('sql')">SQL</a></li>
+          <li><a href="#" onclick="toggleSidebar('python')">PYTHON</a></li>
+          <li><a href="#" onclick="toggleSidebar('java')">JAVA</a></li>
+          <li><a href="#" onclick="toggleSidebar('php')">PHP</a></li>
+          <li><a href="#" onclick="toggleSidebar('howto')">HOWTO</a></li>
+          <li><a href="#" onclick="toggleSidebar('w3css')">W3.CSS</a></li>
+          <li><a href="#" onclick="toggleSidebar('c')">C</a></li>
+          <li><a href="#" onclick="toggleSidebar('cplusplus')">C++</a></li>
+          <li><a href="#" onclick="toggleSidebar('csharp')">C#</a></li>
+          <li>
+            <a href="#" onclick="toggleSidebar('bootstrap')">BOOTSTRAP</a>
+          </li>
+          <li><a href="#" onclick="toggleSidebar('react')">REACT</a></li>
+          <li><a href="#" onclick="toggleSidebar('mysql')">MYSQL</a></li>
+          <li><a href="#" onclick="toggleSidebar('jquery')">JQUERY</a></li>
+          <li><a href="#" onclick="toggleSidebar('excel')">EXCEL</a></li>
+          <li><a href="#" onclick="toggleSidebar('xml')">XML</a></li>
+          <li><a href="#" onclick="toggleSidebar('django')">DJANGO</a></li>
+          <li><a href="#" onclick="toggleSidebar('numpy')">NUMPY</a></li>
+          <li><a href="#" onclick="toggleSidebar('pandas')">PANDAS</a></li>
+          <li><a href="#" onclick="toggleSidebar('nodejs')">NODEJS</a></li>
+          <li><a href="#" onclick="toggleSidebar('dsa')">DSA</a></li>
+          <li>
+            <a href="#" onclick="toggleSidebar('typescript')">TYPESCRIPT</a>
+          </li>
+          <li><a href="#" onclick="toggleSidebar('angular')">ANGULAR</a></li>
+          <li><a href="#" onclick="toggleSidebar('git')">GIT</a></li>
+          <li>
+            <a href="#" onclick="toggleSidebar('postgresql')">POSTGRESQL</a>
+          </li>
+          <li><a href="#" onclick="toggleSidebar('mongodb')">MONGODB</a></li>
+          <li><a href="#" onclick="toggleSidebar('asp')">ASP</a></li>
+          <li><a href="#" onclick="toggleSidebar('ai')">AI</a></li>
+          <li><a href="#" onclick="toggleSidebar('r')">R</a></li>
+          <li><a href="#" onclick="toggleSidebar('go')">GO</a></li>
+          <li><a href="#" onclick="toggleSidebar('kotlin')">KOTLIN</a></li>
+          <li><a href="#" onclick="toggleSidebar('saas')">SAAS</a></li>
+          <li><a href="#" onclick="toggleSidebar('vue')">VUE</a></li>
+          <li><a href="#" onclick="toggleSidebar('genai')">GEN AI</a></li>
+          <li><a href="#" onclick="toggleSidebar('script')">SCRIPT</a></li>
+          <li>
+            <a href="#" onclick="toggleSidebar('cybersecurity')"
+              >CYBERSECURITY</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="toggleSidebar('datascience')">DATA SCIENCE</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="main-container">
+      <!-- Left Sidebar (Initially Hidden) -->
+      <aside class="sidebar" id="sidebar">
+        <h2 id="sidebar-title">HTML Tutorial</h2>
+        <ul class="sidebar-menu" id="sidebar-menu">
+          <!-- Sidebar content will be dynamically loaded here -->
+        </ul>
+      </aside>
+      <!-- Right Content Area -->
+      <main class="content" id="content">
+        <!-- Initial Content (Image and Welcome Text) -->
+        <div class="initial-content" id="initial-content">
+          <img src="ittechno.png" alt="Technology Image" class="tech-image" />
+          <h2>Welcome to IT TECHNO</h2>
+          <p>
+            Your one-stop destination for all things tech! Click on a menu item
+            to get started.
+          </p>
+        </div>
+
+        <!-- Dynamic Content (Hidden Initially) -->
+        <iframe
+          name="contentFrame"
+          src=""
+          frameborder="0"
+          width="100%"
+          height="100%"
+          class="hidden"
+        ></iframe>
+      </main>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+  </body>
+</html>

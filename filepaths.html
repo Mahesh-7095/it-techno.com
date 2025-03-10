@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML File Paths</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .filepath-example {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .filepath-example h2 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .filepath-example p {
+        line-height: 1.6;
+      }
+      .filepath-example pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .filepath-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML File Paths</h1>
+    </header>
+
+    <div class="container">
+      <div class="filepath-example">
+        <h2>Relative File Paths</h2>
+        <p>
+          Relative file paths are used to link to files within the same website.
+          They are relative to the current file.
+        </p>
+        <pre><code>
+&lt;img src="images/example.jpg" alt="Example Image"&gt;
+            </code></pre>
+        <p>
+          Example: <code>images/example.jpg</code> refers to a file in the
+          <code>images</code> folder.
+        </p>
+      </div>
+
+      <div class="filepath-example">
+        <h2>Absolute File Paths</h2>
+        <p>Absolute file paths include the full URL to the file.</p>
+        <pre><code>
+&lt;img src="https://www.example.com/images/example.jpg" alt="Example Image"&gt;
+            </code></pre>
+        <p>
+          Example:
+          <code>https://www.example.com/images/example.jpg</code> refers to a
+          file on an external server.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

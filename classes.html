@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Classes</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .class-example {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .class-example h2 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .class-example p {
+        line-height: 1.6;
+      }
+      .class-example pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .class-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      .highlight {
+        background-color: #ff5733;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .warning {
+        background-color: #ffc300;
+        color: #333;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Classes</h1>
+    </header>
+
+    <div class="container">
+      <div class="class-example">
+        <h2>Using CSS Classes</h2>
+        <p>
+          CSS classes allow you to apply styles to multiple elements. Use the
+          <code>class</code> attribute to assign a class to an element.
+        </p>
+        <pre><code>
+&lt;p class="highlight"&gt;This is a highlighted paragraph.&lt;/p&gt;
+&lt;p class="warning"&gt;This is a warning paragraph.&lt;/p&gt;
+            </code></pre>
+        <p class="highlight">This is a highlighted paragraph.</p>
+        <p class="warning">This is a warning paragraph.</p>
+      </div>
+
+      <div class="class-example">
+        <h2>Multiple Classes</h2>
+        <p>
+          You can assign multiple classes to an element by separating them with
+          spaces.
+        </p>
+        <pre><code>
+&lt;p class="highlight warning"&gt;This paragraph has multiple classes.&lt;/p&gt;
+            </code></pre>
+        <p class="highlight warning">This paragraph has multiple classes.</p>
+      </div>
+    </div>
+  </body>
+</html>

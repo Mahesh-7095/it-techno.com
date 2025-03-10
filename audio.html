@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Audio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .audio-example {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .audio-example h2 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .audio-example p {
+        line-height: 1.6;
+      }
+      .audio-example pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .audio-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      audio {
+        width: 100%;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Audio</h1>
+    </header>
+
+    <div class="container">
+      <div class="audio-example">
+        <h2>Embedding Audio</h2>
+        <p>
+          Use the <code>&lt;audio&gt;</code> tag to embed audio content in HTML.
+        </p>
+        <pre><code>
+&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    Your browser does not support the audio element.
+&lt;/audio&gt;
+            </code></pre>
+        <audio controls>
+          <source
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div class="audio-example">
+        <h2>Audio Attributes</h2>
+        <p>
+          You can customize audio playback using attributes like
+          <code>autoplay</code>, <code>loop</code>, and <code>muted</code>.
+        </p>
+        <pre><code>
+&lt;audio controls autoplay loop muted&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    Your browser does not support the audio element.
+&lt;/audio&gt;
+            </code></pre>
+        <audio controls autoplay loop muted>
+          <source
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </body>
+</html>

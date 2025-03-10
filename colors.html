@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Colors</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .color-example {
+        background-color: #fff;
+        margin: 10px 0;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .color-example h2 {
+        margin-top: 0;
+      }
+      .color-example p {
+        line-height: 1.6;
+      }
+      .color-example pre {
+        background-color: #f8f8f8;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .color-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      .color-box {
+        width: 100px;
+        height: 100px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Colors</h1>
+    </header>
+
+    <div class="container">
+      <div class="color-example">
+        <h2>Introduction to Colors in HTML</h2>
+        <p>Colors in HTML and CSS can be defined in several ways, including:</p>
+        <ul>
+          <li>
+            <strong>Color Names</strong>: Predefined color names like
+            <code>red</code>, <code>blue</code>, <code>green</code>, etc.
+          </li>
+          <li>
+            <strong>RGB Values</strong>: Using the <code>rgb()</code> function
+            to define colors by their red, green, and blue components.
+          </li>
+          <li>
+            <strong>Hexadecimal Values</strong>: Using a 6-digit hexadecimal
+            code like <code>#FF5733</code>.
+          </li>
+          <li>
+            <strong>HSL Values</strong>: Using the <code>hsl()</code> function
+            to define colors by their hue, saturation, and lightness.
+          </li>
+        </ul>
+        <p>Below are examples of each method:</p>
+      </div>
+
+      <div class="color-example">
+        <h2>Color Names</h2>
+        <p>
+          HTML supports 140 predefined color names. Here are a few examples:
+        </p>
+        <pre><code>
+&lt;div style="background-color: red;"&gt;&lt;/div&gt;
+&lt;div style="background-color: blue;"&gt;&lt;/div&gt;
+&lt;div style="background-color: green;"&gt;&lt;/div&gt;
+            </code></pre>
+        <div class="color-box" style="background-color: red"></div>
+        <div class="color-box" style="background-color: blue"></div>
+        <div class="color-box" style="background-color: green"></div>
+      </div>
+
+      <div class="color-example">
+        <h2>RGB Colors</h2>
+        <p>
+          RGB colors are defined using the <code>rgb()</code> function. Each
+          parameter (red, green, blue) ranges from 0 to 255.
+        </p>
+        <pre><code>
+&lt;div style="background-color: rgb(255, 0, 0);"&gt;&lt;/div&gt;
+&lt;div style="background-color: rgb(0, 255, 0);"&gt;&lt;/div&gt;
+&lt;div style="background-color: rgb(0, 0, 255);"&gt;&lt;/div&gt;
+            </code></pre>
+        <div class="color-box" style="background-color: rgb(255, 0, 0)"></div>
+        <div class="color-box" style="background-color: rgb(0, 255, 0)"></div>
+        <div class="color-box" style="background-color: rgb(0, 0, 255)"></div>
+      </div>
+
+      <div class="color-example">
+        <h2>Hexadecimal Colors</h2>
+        <p>
+          Hexadecimal colors are defined using a 6-digit code prefixed with a
+          <code>#</code>. Each pair of digits represents red, green, and blue.
+        </p>
+        <pre><code>
+&lt;div style="background-color: #FF5733;"&gt;&lt;/div&gt;
+&lt;div style="background-color: #33FF57;"&gt;&lt;/div&gt;
+&lt;div style="background-color: #3357FF;"&gt;&lt;/div&gt;
+            </code></pre>
+        <div class="color-box" style="background-color: #ff5733"></div>
+        <div class="color-box" style="background-color: #33ff57"></div>
+        <div class="color-box" style="background-color: #3357ff"></div>
+      </div>
+
+      <div class="color-example">
+        <h2>HSL Colors</h2>
+        <p>
+          HSL colors are defined using the <code>hsl()</code> function. The
+          parameters are hue (0-360), saturation (0%-100%), and lightness
+          (0%-100%).
+        </p>
+        <pre><code>
+&lt;div style="background-color: hsl(0, 100%, 50%);"&gt;&lt;/div&gt;
+&lt;div style="background-color: hsl(120, 100%, 50%);"&gt;&lt;/div&gt;
+&lt;div style="background-color: hsl(240, 100%, 50%);"&gt;&lt;/div&gt;
+            </code></pre>
+        <div
+          class="color-box"
+          style="background-color: hsl(0, 100%, 50%)"
+        ></div>
+        <div
+          class="color-box"
+          style="background-color: hsl(120, 100%, 50%)"
+        ></div>
+        <div
+          class="color-box"
+          style="background-color: hsl(240, 100%, 50%)"
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>

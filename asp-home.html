@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASP.NET Home</title>
+    <style>
+      /* Same styles as saas-home.html */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: relative;
+      }
+      h1 {
+        color: #007bff;
+        text-align: center;
+      }
+      h2 {
+        color: #0056b3;
+      }
+      p {
+        line-height: 1.6;
+      }
+      pre {
+        background-color: #f8f9fa;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        overflow-x: auto;
+      }
+      code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-top: 20px;
+      }
+      .btn:hover {
+        background-color: #0056b3;
+      }
+      .nav-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+      .nav-buttons .btn {
+        margin: 0;
+      }
+      @media (max-width: 768px) {
+        .container {
+          padding: 10px;
+        }
+        .nav-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+        .nav-buttons .btn {
+          margin: 10px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to ASP.NET!</h1>
+      <p>
+        ASP.NET is a web framework developed by Microsoft for building dynamic
+        web applications and services.
+      </p>
+
+      <h2>What is ASP.NET?</h2>
+      <p>
+        ASP.NET is a framework for building web applications using .NET. It
+        supports MVC architecture, Razor Pages, and Web API.
+      </p>
+
+      <h2>Why Learn ASP.NET?</h2>
+      <ul>
+        <li><strong>Scalability:</strong> Build scalable web applications.</li>
+        <li>
+          <strong>Security:</strong> Built-in features for authentication and
+          authorization.
+        </li>
+        <li>
+          <strong>Integration:</strong> Works seamlessly with other .NET
+          libraries.
+        </li>
+      </ul>
+
+      <h2>Key Topics in ASP.NET</h2>
+      <ul>
+        <li>Introduction to ASP.NET</li>
+        <li>MVC Architecture</li>
+        <li>Razor Pages</li>
+        <li>Web API</li>
+        <li>Deployment</li>
+      </ul>
+
+      <h2>Example: Hello World in ASP.NET</h2>
+      <p>Here’s a simple ASP.NET MVC controller:</p>
+      <pre><code>
+public class HomeController : Controller {
+    public IActionResult Index() {
+        return View();
+    }
+}
+        </code></pre>
+
+      <!-- Navigation Buttons -->
+      <div class="nav-buttons">
+        <a href="#" class="btn">Previous</a>
+        <!-- Replace # with the previous page link -->
+        <a href="asp-intro.html" class="btn">Next</a>
+      </div>
+    </div>
+  </body>
+</html>

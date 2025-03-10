@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Input Types</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .input-types-example {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .input-types-example h2 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .input-types-example p {
+        line-height: 1.6;
+      }
+      .input-types-example pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .input-types-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      input,
+      button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      button {
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Input Types</h1>
+    </header>
+
+    <div class="container">
+      <div class="input-types-example">
+        <h2>Common Input Types</h2>
+        <p>
+          HTML provides various input types for forms, such as text, email,
+          password, date, and more.
+        </p>
+        <pre><code>
+&lt;form&gt;
+    &lt;label for="text"&gt;Text:&lt;/label&gt;
+    &lt;input type="text" id="text" name="text"&gt;
+
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+
+    &lt;label for="password"&gt;Password:&lt;/label&gt;
+    &lt;input type="password" id="password" name="password"&gt;
+
+    &lt;label for="date"&gt;Date:&lt;/label&gt;
+    &lt;input type="date" id="date" name="date"&gt;
+
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+            </code></pre>
+        <form>
+          <label for="text">Text:</label>
+          <input type="text" id="text" name="text" />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" />
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" />
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
