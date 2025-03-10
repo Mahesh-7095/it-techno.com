@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Encoding</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .urlencode-example {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .urlencode-example h2 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .urlencode-example p {
+        line-height: 1.6;
+      }
+      .urlencode-example pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .urlencode-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>URL Encoding</h1>
+    </header>
+
+    <div class="container">
+      <div class="urlencode-example">
+        <h2>What is URL Encoding?</h2>
+        <p>
+          URL encoding converts characters into a format that can be transmitted
+          over the internet. It replaces unsafe ASCII characters with a
+          <code>%</code> followed by two hexadecimal digits.
+        </p>
+        <pre><code>
+Original: Hello World!
+Encoded: Hello%20World%21
+            </code></pre>
+        <p>
+          Example: <code>Hello World!</code> becomes
+          <code>Hello%20World%21</code>.
+        </p>
+      </div>
+
+      <div class="urlencode-example">
+        <h2>Common URL Encoded Characters</h2>
+        <ul>
+          <li>Space: <code>%20</code></li>
+          <li>Exclamation Mark: <code>%21</code></li>
+          <li>Hash: <code>%23</code></li>
+          <li>Question Mark: <code>%3F</code></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

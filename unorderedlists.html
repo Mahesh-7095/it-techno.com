@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Unordered Lists</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .unordered-list-example {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .unordered-list-example h2 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .unordered-list-example p {
+        line-height: 1.6;
+      }
+      .unordered-list-example pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .unordered-list-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      ul {
+        margin: 10px 0;
+        padding-left: 20px;
+      }
+      ul.disc {
+        list-style-type: disc;
+      }
+      ul.circle {
+        list-style-type: circle;
+      }
+      ul.square {
+        list-style-type: square;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Unordered Lists</h1>
+    </header>
+
+    <div class="container">
+      <div class="unordered-list-example">
+        <h2>Unordered List Styles</h2>
+        <p>
+          You can change the bullet style of an unordered list using the
+          <code>list-style-type</code> property.
+        </p>
+        <pre><code>
+&lt;ul class="disc"&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class="circle"&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class="square"&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+            </code></pre>
+        <ul class="disc">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+        <ul class="circle">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+        <ul class="square">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

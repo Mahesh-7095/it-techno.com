@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Web Storage</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .webstorage-example {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .webstorage-example h2 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .webstorage-example p {
+        line-height: 1.6;
+      }
+      .webstorage-example pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .webstorage-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      input,
+      button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      button {
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Web Storage</h1>
+    </header>
+
+    <div class="container">
+      <div class="webstorage-example">
+        <h2>Using localStorage</h2>
+        <p>
+          <code>localStorage</code> allows you to store data persistently in the
+          browser.
+        </p>
+        <pre><code>
+&lt;input type="text" id="localStorageInput" placeholder="Enter text"&gt;
+&lt;button onclick="saveToLocalStorage()"&gt;Save to localStorage&lt;/button&gt;
+&lt;button onclick="loadFromLocalStorage()"&gt;Load from localStorage&lt;/button&gt;
+&lt;p id="localStorageOutput"&gt;&lt;/p&gt;
+&lt;script&gt;
+    function saveToLocalStorage() {
+        const input = document.getElementById("localStorageInput").value;
+        localStorage.setItem("savedText", input);
+    }
+    function loadFromLocalStorage() {
+        const output = localStorage.getItem("savedText");
+        document.getElementById("localStorageOutput").innerText = output || "No data found.";
+    }
+&lt;/script&gt;
+            </code></pre>
+        <input type="text" id="localStorageInput" placeholder="Enter text" />
+        <button onclick="saveToLocalStorage()">Save to localStorage</button>
+        <button onclick="loadFromLocalStorage()">Load from localStorage</button>
+        <p id="localStorageOutput"></p>
+        <script>
+          function saveToLocalStorage() {
+            const input = document.getElementById("localStorageInput").value;
+            localStorage.setItem("savedText", input);
+          }
+          function loadFromLocalStorage() {
+            const output = localStorage.getItem("savedText");
+            document.getElementById("localStorageOutput").innerText =
+              output || "No data found.";
+          }
+        </script>
+      </div>
+
+      <div class="webstorage-example">
+        <h2>Using sessionStorage</h2>
+        <p>
+          <code>sessionStorage</code> stores data for the duration of the
+          session.
+        </p>
+        <pre><code>
+&lt;input type="text" id="sessionStorageInput" placeholder="Enter text"&gt;
+&lt;button onclick="saveToSessionStorage()"&gt;Save to sessionStorage&lt;/button&gt;
+&lt;button onclick="loadFromSessionStorage()"&gt;Load from sessionStorage&lt;/button&gt;
+&lt;p id="sessionStorageOutput"&gt;&lt;/p&gt;
+&lt;script&gt;
+    function saveToSessionStorage() {
+        const input = document.getElementById("sessionStorageInput").value;
+        sessionStorage.setItem("savedText", input);
+    }
+    function loadFromSessionStorage() {
+        const output = sessionStorage.getItem("savedText");
+        document.getElementById("sessionStorageOutput").innerText = output || "No data found.";
+    }
+&lt;/script&gt;
+            </code></pre>
+        <input type="text" id="sessionStorageInput" placeholder="Enter text" />
+        <button onclick="saveToSessionStorage()">Save to sessionStorage</button>
+        <button onclick="loadFromSessionStorage()">
+          Load from sessionStorage
+        </button>
+        <p id="sessionStorageOutput"></p>
+        <script>
+          function saveToSessionStorage() {
+            const input = document.getElementById("sessionStorageInput").value;
+            sessionStorage.setItem("savedText", input);
+          }
+          function loadFromSessionStorage() {
+            const output = sessionStorage.getItem("savedText");
+            document.getElementById("sessionStorageOutput").innerText =
+              output || "No data found.";
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

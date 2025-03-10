@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Web Workers</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .webworkers-example {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .webworkers-example h2 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .webworkers-example p {
+        line-height: 1.6;
+      }
+      .webworkers-example pre {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      .webworkers-example code {
+        font-family: Consolas, monospace;
+        color: #d63384;
+      }
+      button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Web Workers</h1>
+    </header>
+
+    <div class="container">
+      <div class="webworkers-example">
+        <h2>Using Web Workers</h2>
+        <p>
+          Web Workers allow you to run JavaScript in the background without
+          blocking the main thread.
+        </p>
+        <pre><code>
+&lt;button onclick="startWorker()"&gt;Start Worker&lt;/button&gt;
+&lt;button onclick="stopWorker()"&gt;Stop Worker&lt;/button&gt;
+&lt;p id="workerOutput"&gt;&lt;/p&gt;
+&lt;script&gt;
+    let worker;
+    function startWorker() {
+        if (typeof Worker !== "undefined") {
+            worker = new Worker("worker.js");
+            worker.onmessage = (event) => {
+                document.getElementById("workerOutput").innerText = event.data;
+            };
+        } else {
+            document.getElementById("workerOutput").innerText = "Web Workers not supported.";
+        }
+    }
+    function stopWorker() {
+        if (worker) {
+            worker.terminate();
+            worker = null;
+            document.getElementById("workerOutput").innerText = "Worker stopped.";
+        }
+    }
+&lt;/script&gt;
+            </code></pre>
+        <button onclick="startWorker()">Start Worker</button>
+        <button onclick="stopWorker()">Stop Worker</button>
+        <p id="workerOutput"></p>
+        <script>
+          let worker;
+          function startWorker() {
+            if (typeof Worker !== "undefined") {
+              worker = new Worker("worker.js");
+              worker.onmessage = (event) => {
+                document.getElementById("workerOutput").innerText = event.data;
+              };
+            } else {
+              document.getElementById("workerOutput").innerText =
+                "Web Workers not supported.";
+            }
+          }
+          function stopWorker() {
+            if (worker) {
+              worker.terminate();
+              worker = null;
+              document.getElementById("workerOutput").innerText =
+                "Worker stopped.";
+            }
+          }
+        </script>
+      </div>
+    </div>
+
+    <!-- worker.js -->
+    <script id="workerScript" type="javascript/worker">
+      let i = 0;
+      setInterval(() => {
+          postMessage("Worker count: " + i++);
+      }, 1000);
+    </script>
+    <script>
+      const blob = new Blob(
+        [document.getElementById("workerScript").textContent],
+        { type: "text/javascript" }
+      );
+      const workerUrl = URL.createObjectURL(blob);
+      window.workerJsUrl = workerUrl;
+    </script>
+    <script>
+      // Override the worker.js URL for demonstration purposes
+      window.Worker = class Worker {
+        constructor(url) {
+          this.url = url;
+          this.onmessage = null;
+          this.interval = setInterval(() => {
+            if (this.onmessage) {
+              this.onmessage({
+                data: "Worker count: " + Math.floor(Math.random() * 100),
+              });
+            }
+          }, 1000);
+        }
+        terminate() {
+          clearInterval(this.interval);
+        }
+      };
+    </script>
+  </body>
+</html>
